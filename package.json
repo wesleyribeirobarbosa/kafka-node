@@ -1,0 +1,26 @@
+{
+  "name": "kafka-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:producer": "node ./mq/producer.js",
+    "start:consumer": "node ./mq/consumer.js",
+    "start": "concurrently npm:start:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wesleyribeirobarbosa/kafka-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wesleyribeirobarbosa/kafka-node/issues"
+  },
+  "homepage": "https://github.com/wesleyribeirobarbosa/kafka-node#readme",
+  "dependencies": {
+    "concurrently": "^6.0.2",
+    "kafkajs": "^1.15.0"
+  }
+}
